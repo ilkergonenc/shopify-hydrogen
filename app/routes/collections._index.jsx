@@ -89,6 +89,8 @@ function CollectionItem({collection, index}) {
           aspectRatio="1/1"
           data={collection.image}
           loading={index < 3 ? 'eager' : undefined}
+          width={collection.image.width}
+          height={collection.image.height}
         />
       )}
       <h5>{collection.title}</h5>
